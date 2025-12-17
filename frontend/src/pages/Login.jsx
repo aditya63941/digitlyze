@@ -67,9 +67,9 @@ export default function Login() {
             {loading ? "Logging in..." : "Login"}
           </button>
         </form>
-
-        <div className="login-footer">
-          Don’t have an account? <Link to="/signup">Sign up</Link>
+        
+        <div className="login-footer">Don’t have an account?{" "}
+        <a href="/#contact">Contact us to get started</a>
         </div>
       </div>
     </div>
