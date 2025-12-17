@@ -1,0 +1,50 @@
+.dashboard {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.dashboard h2 {
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.dashboard-card {
+  background: #020617;
+  padding: 1.5rem;
+  border-radius: 14px;
+  border: 1px solid #1f2937;
+  color: #e5e7eb;
+}
+
+.dashboard-card h3 {
+  color: #93c5fd;
+  margin-bottom: 0.5rem;
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+
+.progress {
+  background: #1f2937;
+  height: 8px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 0.4rem;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #3b82f6, #06b6d4);
+  transition: width 0.4s ease;
+}

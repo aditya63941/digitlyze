@@ -1,0 +1,103 @@
+/* =========================
+   FOOTER
+========================= */
+
+.site-footer {
+  background: var(--bg-soft);
+  border-top: 1px solid var(--border);
+  margin-top: 4rem;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 3rem;
+  padding: 3rem 0;
+}
+
+/* =========================
+   BRAND
+========================= */
+
+.footer-brand h3 {
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.footer-brand span {
+  color: var(--primary);
+}
+
+.footer-brand p {
+  margin-top: 0.8rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+/* =========================
+   LINKS
+========================= */
+
+.footer-links h4,
+.footer-contact h4 {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--primary);
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.footer-contact p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+/* =========================
+   BOTTOM
+========================= */
+
+.footer-bottom {
+  border-top: 1px solid var(--border);
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+}

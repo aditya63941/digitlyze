@@ -1,0 +1,56 @@
+.admin-projects {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.project-form {
+  display: grid;
+  gap: 1rem;
+  background: #0b1220;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.project-form input,
+.project-form textarea,
+.project-form select {
+  padding: 0.75rem;
+  background: #020617;
+  color: #e5e7eb;
+  border: 1px solid #1f2937;
+  border-radius: 6px;
+}
+
+.project-form button {
+  background: #3b82f6;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.project-form button:hover {
+  background: #2563eb;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.project-card {
+  background: #020617;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #e5e7eb;
+  border: 1px solid #1f2937;
+}
+
+.project-card h4 {
+  color: #93c5fd;
+  margin-bottom: 0.4rem;
+}

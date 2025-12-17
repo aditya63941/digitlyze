@@ -1,0 +1,82 @@
+/* =========================
+   SERVICES SECTION
+========================= */
+
+#services {
+  background: var(--bg-soft);
+}
+
+/* =========================
+   SECTION HEADER
+========================= */
+
+.section-header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 3rem;
+}
+
+.section-header h2 {
+  margin-bottom: 0.5rem;
+}
+
+.section-header p {
+  font-size: 1rem;
+}
+
+/* =========================
+   SERVICES GRID
+========================= */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem;
+}
+
+/* =========================
+   SERVICE CARD
+========================= */
+
+.service-card {
+  background: var(--bg);
+  padding: 2rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.service-card h3 {
+  margin-bottom: 0.6rem;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+}
+
+/* =========================
+   HOVER EFFECT
+========================= */
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(56, 189, 248, 0.15);
+  border-color: var(--primary);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}

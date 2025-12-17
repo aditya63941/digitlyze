@@ -1,0 +1,40 @@
+.admin-contacts {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.admin-contacts h2 {
+  margin-bottom: 1.5rem;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #0b1220;
+  color: #e5e7eb;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #1f2937;
+  text-align: left;
+}
+
+th {
+  background: #111827;
+  color: #93c5fd;
+}
+
+tr:hover {
+  background: #1f2937;
+}
+
+.loading {
+  padding: 2rem;
+  text-align: center;
+}

@@ -1,0 +1,114 @@
+/* =========================
+   DESIGN SYSTEM (GLOBAL)
+========================= */
+
+:root {
+  --bg: #020617;
+  --bg-soft: #0f172a;
+  --card: #020617;
+  --border: rgba(255, 255, 255, 0.08);
+
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+
+  --primary: #38bdf8;
+  --primary-dark: #0ea5e9;
+
+  --radius: 14px;
+  --radius-sm: 10px;
+
+  --max-width: 1200px;
+
+  --transition: 0.3s ease;
+}
+
+/* =========================
+   RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+/* =========================
+   COMMON LAYOUT
+========================= */
+
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 1.25rem;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+
+h1 {
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  font-weight: 800;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+p {
+  color: var(--muted);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+  padding: 0.7rem 1.2rem;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #000;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.btn-outline:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
